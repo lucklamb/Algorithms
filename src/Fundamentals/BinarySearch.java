@@ -25,9 +25,16 @@ public class BinarySearch {
 	public static void main(String[] args) {
 		int[] whitelist = { 23, 54, 12, 63, 14, 25, 73, 13, 79, 5, 21, 9 };
 		Arrays.sort(whitelist);
-		int key = 20;
+		for(int i=0;i<whitelist.length;i++) {
+			StdOut.print(whitelist[i] + "  ");
+		}
+		StdOut.println();
+		int key = 21;
 		if (rank(key, whitelist) < 0) {
 			StdOut.println(key);
+		}
+		else {
+			StdOut.println(rank(key, whitelist));
 		}
 	}
 
